@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mat-card {
+    margin: auto;
+    width: 400px;
+    top: 20px;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+::ng-deep .mat-form-field-wrapper {
+    margin-bottom: -1.25em;
+}
+
+h2 {
+    padding-bottom: 20px;
+}

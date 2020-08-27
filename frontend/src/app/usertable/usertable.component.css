@@ -1,0 +1,24 @@
+.mat-elevation-z8 {
+    width: 100%;
+    margin: 25px;
+}
+
+.mat-header-cell {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.dis {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-style: normal;
+}
+
+.text-danger>.mat-cell {
+    color: red;
+}
+
+.text-success>.mat-cell {
+    color: green;
+}

@@ -1,0 +1,27 @@
+<div class="container">
+    <mat-card>
+        <h2>User Registration Form</h2>
+
+        <form [formGroup]="user" (ngSubmit)="onSubmit()">
+            <mat-form-field class="form-group">
+                <input matInput class="form-control" formControlName="Name" placeholder="Name">
+            </mat-form-field>
+            <mat-form-field class="form-group">
+                <input matInput class="form-control" formControlName="LastName" placeholder="LastName">
+            </mat-form-field>
+            <mat-form-field class="form-group">
+                <input matInput class="form-control" formControlName="Class" placeholder="Class">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Year of Passing</mat-label>
+                <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker1" formControlName="YoP">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field class="form-group">
+                <input matInput class="form-control" formControlName="PoM" placeholder="Percentage of Marks">
+            </mat-form-field>
+            <button type="submit" mat-raised-button [disabled]="!user.valid" color="primary">Save</button>
+        </form>
+    </mat-card>
+</div>
